@@ -1,0 +1,6 @@
+# Python 3.10+ and a CUDA build of PyTorch (the released files: Python 3.13, PyTorch 2.14 + CUDA 13.4)
+torch>=2.6
+transformers>=5.0
+safetensors
+numpy
+# gguf-py of the MS llama.cpp fork (knows the MS_C1..MS_C6 types): pip install <ms-llama.cpp checkout>/gguf-py

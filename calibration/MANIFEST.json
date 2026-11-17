@@ -1,0 +1,175 @@
+{
+ "note": "Fingerprints (SHA-256 of the token ids as little-endian int64, row-major) of the calibration pools the released files were converted with. Calibration = the first 192 sequences of the s0 pool, then the other pools in config order, cut at 4,096 sequences of 512 tokens (2,097,152 tokens).",
+ "models": {
+  "qwen3.5-2b": {
+   "pools": {
+    "selfgen_256x512_t0.9_s0.pt": {
+     "shape": [
+      256,
+      512
+     ],
+     "sha256": "619459a236b0a072e31cd5fe9610626dcbde73ef0f4ba22338ce8666db44e369",
+     "used": "first 192 sequences",
+     "made_by": "calibration/selfgen.py --pools s0"
+    },
+    "real_web_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "5e7bb8786739133796da910f4279aae408177f6d84efc1814ac540ba1aadefd9",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only web"
+    },
+    "real_wiki_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "95f1188f5a448eb3d966b509bc313ab62cb79bab11ca619a208098820375a4a7",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only wiki"
+    },
+    "real_code_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "89d5cb174dc8dc2530707b313f7db4e1341fb9910d67025efbb69bd89af7aa9c",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only code"
+    },
+    "real_math_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "364757d44035a307434e59ac59f573f07f2f2980314173926ea9f396ad0429c3",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only math"
+    },
+    "real_web2_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "947d10ce4509a9afeb3bc51367312377b0a902d9240f2278feace6cefb3d3947",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only web --offset 30000 --tag 2"
+    },
+    "real_wiki2_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "30c8400b4ac9b2cc567aef404239fac0e89363bc5b8b38671a52570203fddc55",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only wiki --offset 30000 --tag 2"
+    },
+    "selfgen_div_512x512_s5_t1p1.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "53aa57fd613f909dfc727a68ed5879866eb065a057fa579fb37bf5ce935be7d4",
+     "used": "all 512 sequences",
+     "made_by": "calibration/selfgen.py --pools d5"
+    },
+    "selfgen_div_512x512_s6_t1p1.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "957be368967d74aff6d383a10e45a2af1db8cb9d81fcbeb8235d61f59329804e",
+     "used": "first 320 sequences",
+     "made_by": "calibration/selfgen.py --pools d6"
+    }
+   }
+  },
+  "qwen3.8-27b": {
+   "pools": {
+    "selfgen_256x512_t0.9_s0.pt": {
+     "shape": [
+      256,
+      512
+     ],
+     "sha256": "6785b658e4724a57621cf032f19928c1bc41e3793646ee3fddb6e5760dc45a93",
+     "used": "first 192 sequences",
+     "made_by": "calibration/selfgen.py --pools s0"
+    },
+    "real_web_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "5e7bb8786739133796da910f4279aae408177f6d84efc1814ac540ba1aadefd9",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only web"
+    },
+    "real_wiki_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "95f1188f5a448eb3d966b509bc313ab62cb79bab11ca619a208098820375a4a7",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only wiki"
+    },
+    "real_code_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "89d5cb174dc8dc2530707b313f7db4e1341fb9910d67025efbb69bd89af7aa9c",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only code"
+    },
+    "real_math_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "364757d44035a307434e59ac59f573f07f2f2980314173926ea9f396ad0429c3",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only math"
+    },
+    "real_web2_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "947d10ce4509a9afeb3bc51367312377b0a902d9240f2278feace6cefb3d3947",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only web --offset 30000 --tag 2"
+    },
+    "real_wiki2_512x512.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "30c8400b4ac9b2cc567aef404239fac0e89363bc5b8b38671a52570203fddc55",
+     "used": "all 512 sequences",
+     "made_by": "calibration/realtext.py --only wiki --offset 30000 --tag 2"
+    },
+    "selfgen_div_512x512_s5_t1p1.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "ac822e92ed712a1ab4a9eff407c1bf96a829f0d44e961b64bc17f4ce03895749",
+     "used": "all 512 sequences",
+     "made_by": "calibration/selfgen.py --pools d5"
+    },
+    "selfgen_div_512x512_s6_t1p1.pt": {
+     "shape": [
+      512,
+      512
+     ],
+     "sha256": "f5d928a1607b2e8f78253db6c0a8510e4f34e1ec711298bec37c399060e96c6c",
+     "used": "first 320 sequences",
+     "made_by": "calibration/selfgen.py --pools d6"
+    }
+   }
+  }
+ }
+}

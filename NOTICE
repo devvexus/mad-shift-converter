@@ -1,0 +1,18 @@
+MS (Mad Shift) converter. Copyright 2026 Matthew Priester (https://github.com/devvexus, ORCID 0009-0000-0032-5292).
+If you redistribute this software or derived work, keep this NOTICE file.
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The MS format uses the bitshift-trellis construction and the 1MAD decoding function described in QTIP
+(A. Tseng, Q. Sun, D. Hou, C. De Sa, "QTIP: Quantization with Trellises and Incoherence Processing", NeurIPS 2024,
+arXiv:2406.11235). This software contains no code from QTIP or QuIP#.
+
+The per-tensor bit allocation of the Qwen3.8-27B tiers starts from the per-tensor quantization types of unsloth's
+Unsloth Dynamic GGUFs (https://huggingface.co/unsloth/Qwen3.8-27B-GGUF, Apache License 2.0), and the converter copies the
+tensors MS does not code (the input token table, norms and small SSM tensors) from those files into the Qwen3.8-27B MS files.
+
+madshift/gdn.py is derived from Hugging Face transformers (src/transformers/models/qwen3_5/modeling_qwen3_5.py),
+Copyright 2025 The Qwen Team and The HuggingFace Inc. team, licensed under the Apache License, Version 2.0.
+
+The converter reads and writes GGUF files with gguf-py from llama.cpp (MIT License, Copyright the ggml authors), as included
+in the MS llama.cpp fork (https://github.com/devvexus/ms-llama.cpp); gguf-py is a dependency and is not included here.

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or the MS (Mad Shift) format, please cite it as below."
+title: "MS (Mad Shift) converter"
+type: software
+authors:
+  - family-names: Priester
+    given-names: Matthew
+    orcid: "https://orcid.org/0009-0000-0032-5292"
+license: Apache-2.0
+url: "https://github.com/devvexus/mad-shift-converter"
+repository-code: "https://github.com/devvexus/mad-shift-converter"
+version: "1.0.0"
+date-released: "2026-11-17"
+keywords:
+  - quantization
+  - GGUF
+  - trellis-coded quantization
+  - large language models
+references:
+  - type: conference-paper
+    title: "QTIP: Quantization with Trellises and Incoherence Processing"
+    authors:
+      - family-names: Tseng
+        given-names: Albert
+      - family-names: Sun
+        given-names: Qingyao
+      - family-names: Hou
+        given-names: David
+      - family-names: De Sa
+        given-names: Christopher
+    collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+    year: 2024
+    identifiers:
+      - type: other
+        value: "arXiv:2406.11235"
