@@ -106,6 +106,8 @@ MS (Mad Shift) and this converter: Matthew Priester (https://github.com/devvexus
 `CITATION.cff`, and QTIP for the bitshift trellis and the 1MAD code:
 A. Tseng, Q. Sun, D. Hou, C. De Sa, "QTIP: Quantization with Trellises and Incoherence Processing", NeurIPS 2024, arXiv:2406.11235.
 
+Technical report: Priester, M. (2026). MS (Mad Shift): Trellis-Coded GGUF Quantization for llama.cpp (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.24145285
+
 ## License
 
 Apache License 2.0 (`LICENSE`). Keep the `NOTICE` file when you redistribute this software or work derived from it.

@@ -33,3 +33,15 @@ references:
     identifiers:
       - type: other
         value: "arXiv:2406.11235"
+preferred-citation:
+  type: report
+  title: "MS (Mad Shift): Trellis-Coded GGUF Quantization for llama.cpp"
+  authors:
+    - family-names: Priester
+      given-names: Matthew
+      orcid: "https://orcid.org/0009-0000-0032-5292"
+  date-published: 2026-11-17
+  publisher:
+    name: Zenodo
+  version: "1.0"
+  doi: "10.5281/zenodo.24145285"
